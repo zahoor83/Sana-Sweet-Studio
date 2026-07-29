@@ -301,4 +301,44 @@ nav ul li a:hover {
 
 .feature h3 {
     color: #8B5E3C;
+}/* Why Choose Us Section */
+
+.why-us {
+    padding: 80px 60px;
+    text-align: center;
+    background: white;
+}
+
+.why-us h2 {
+    font-size: 42px;
+    color: #8B5E3C;
+    margin-bottom: 40px;
+}
+
+.why-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.why-card {
+    background: #fffaf5;
+    padding: 35px 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+}
+
+.why-card h3 {
+    color: #8B5E3C;
+    margin-bottom: 15px;
+}
+
+.why-card p {
+    color: #666;
+    line-height: 1.7;
 }
