@@ -263,4 +263,42 @@ nav ul li a:hover {
 .cake-card p {
     color: #666;
     font-size: 15px;
+}/* Premium About Section */
+
+.about {
+    padding: 80px 60px;
+    background: #fffaf5;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 42px;
+    color: #8B5E3C;
+    margin-bottom: 25px;
+}
+
+.about-content p {
+    max-width: 800px;
+    margin: 15px auto;
+    color: #555;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.feature {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.feature h3 {
+    color: #8B5E3C;
 }
