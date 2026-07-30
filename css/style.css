@@ -361,3 +361,42 @@ nav ul li a:hover {
     </div>
 
 </section>
+/* Footer */
+
+.footer {
+    background: #4E342E;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.footer h2 {
+    margin-bottom: 15px;
+}
+
+.footer p {
+    color: #f5f5f5;
+    line-height: 1.8;
+}
+
+.social-links {
+    margin: 25px 0;
+}
+
+.social-links a {
+    color: #D4A373;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: white;
+}
+
+.copyright {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #cccccc;
+}
