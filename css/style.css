@@ -131,7 +131,7 @@ nav ul li a:hover{
 
 .hero-image img{
     width:100%;
-    max-width:500px;
+    max-width:350px;
     border-radius:25px;
     box-shadow:0 20px 40px rgba(0,0,0,.15);
 }
