@@ -1,556 +1,528 @@
-/* Sana's Sweet Studio - Main Styles */
+/* ======================================================
+   NEW PROFESSIONAL CSS
+   Sana's Sweet Studio
+   PART 1
+====================================================== */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    line-height: 1.6;
-    background-color: #fffaf7;
+html{
+    scroll-behavior:smooth;
 }
 
-header {
-    background-color: #ffffff;
-    padding: 20px 50px;
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#fffaf6;
+    color:#444;
+    line-height:1.6;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #fffaf5;
-    padding: 20px 60px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    position: sticky;
-    top: 0;
-}
+/* HEADER */
 
-nav h1 {
-    font-size: 30px;
-    color: #8B5E3C;
-    font-weight: bold;
+header{
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:#fffaf5;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 35px;
+nav{
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 40px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #444;
-    font-size: 18px;
-    font-weight: 600;
-    transition: 0.3s;
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
 }
 
-nav ul li a:hover {
-    color: #D4A373;
+.logo img{
+    width:70px;
+    height:70px;
+    object-fit:cover;
+    border-radius:50%;
 }
 
-
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-    background-color: #fce8dc;
+.logo h1{
+    color:#8B5E3C;
+    font-size:30px;
 }
 
-.hero h2 {
-    font-size: 48px;
-    margin-bottom: 20px;
+.logo span{
+    display:block;
+    color:#C9975B;
+    font-size:14px;
 }
 
-.hero p {
-    font-size: 20px;
-    margin-bottom: 30px;
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:35px;
 }
 
-.hero button {
-    padding: 15px 35px;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
+nav ul li a{
+    text-decoration:none;
+    color:#444;
+    font-weight:bold;
+    transition:.3s;
 }
 
-.about,
-.products {
-    padding: 60px 50px;
-    text-align: center;
+nav ul li a:hover{
+    color:#C9975B;
 }
 
-.products div {
-    margin-top: 30px;
-}
+/* HERO */
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-}.gallery {
-    padding: 60px 50px;
-    text-align: center;
+.hero{
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    padding:80px 40px;
 }
 
-.gallery h2 {
-    margin-bottom: 40px;
-    font-size: 36px;
-}
-
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.gallery-container img {
-    width: 50%;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 20px;
-}.hero img {
-    width: 400px;
-    max-width: 90%;
-    height: auto;
-    border-radius: 20px;
-    margin-bottom: 30px;
-}/* ==========================
-   Premium Hero Section
-========================== */
-
-.hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 80px 60px;
-    background: #fffaf5;
-    gap: 50px;
+.hero-content{
+    flex:1;
 }
 
-.hero-content {
-    flex: 1;
+.hero-content h2{
+    font-size:52px;
+    color:#5b3b25;
+    margin-bottom:20px;
 }
 
-.hero-content h2 {
-    font-size: 52px;
-    color: #5C4033;
-    margin-bottom: 20px;
-    line-height: 1.2;
+.hero-content p{
+    font-size:18px;
+    color:#666;
+    margin-bottom:35px;
 }
 
-.hero-content p {
-    font-size: 18px;
-    color: #555;
-    line-height: 1.8;
-    margin-bottom: 35px;
+.hero-btn{
+    display:inline-block;
+    background:#D4A373;
+    color:#fff;
+    padding:15px 35px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
 }
 
-.hero-btn {
-    display: inline-block;
-    background: #D4A373;
-    color: white;
-    padding: 15px 35px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
+.hero-btn:hover{
+    background:#b8834d;
 }
 
-.hero-btn:hover {
-    background: #B07D4F;
+.hero-image{
+    flex:1;
+    text-align:center;
 }
 
-.hero-image {
-    flex: 1;
-    text-align: center;
+.hero-image img{
+    width:100%;
+    max-width:500px;
+    border-radius:25px;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
 }
+
+/* ======================================================
+   PART 2
+   ABOUT • WHY US • GALLERY • PRODUCTS
+====================================================== */
 
-.hero-image img {
-    width: 450px;
-    max-width: 100%;
-    border-radius: 25px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-}[12:01 am, 30/07/2026] Zahoor: <header>
+/* ABOUT */
 
-    <nav>
+.about{
+    padding:90px 40px;
+    background:#fffaf5;
+    text-align:center;
+}
 
-        <div class="logo">
-            <h1>Sana's Sweet Studio</h1>
-            <span>Premium Homemade Cakes</span>
-        </div>
+.about h2{
+    font-size:42px;
+    color:#8B5E3C;
+    margin-bottom:25px;
+}
 
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+.about p{
+    max-width:900px;
+    margin:15px auto;
+    font-size:18px;
+    color:#666;
+    line-height:1.9;
+}
 
-    </nav>
+.about-features{
+    margin-top:50px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
 
-</header>
-[12:05 am, 30/07/2026] Zahoor: <section id="about" class="about">
-[12:06 am, 30/07/2026] Zahoor: <section id="gallery" class="gallery">
-[12:08 am, 30/07/2026] Zahoor: /* ==========================
-   Premium Header
-========================== */
+.feature{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
 
-header {
-    background: #fffaf5;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+.feature:hover{
+    transform:translateY(-8px);
 }
 
-.logo h1 {
-    margin: 0;
-    color: #8B5E3C;
-    font-size: 30px;
+.feature h3{
+    color:#8B5E3C;
+    margin-bottom:15px;
 }
 
-.logo span {
-    display: block;
-    font-size: 14px;
-    color: #D4A373;
-    margin-top: 3px;
-    letter-spacing: 1px;
+.feature p{
+    font-size:15px;
 }
 
-nav ul li a {
-    padding-bottom: 5px;
+/* WHY CHOOSE US */
+
+.why-us{
+    padding:90px 40px;
+    background:#fff;
+    text-align:center;
 }
 
-nav ul li a:hover {
-    border-bottom: 2px solid #D4A373;
-}/* Premium Gallery Cards */
+.why-us h2{
+    font-size:42px;
+    color:#8B5E3C;
+    margin-bottom:45px;
+}
 
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+.why-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
 }
 
-.cake-card {
-    background: #fffaf5;
-    border-radius: 20px;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    transition: 0.3s;
+.why-card{
+    background:#fffaf5;
+    border-radius:20px;
+    padding:35px 25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
 }
 
-.cake-card:hover {
-    transform: translateY(-8px);
+.why-card:hover{
+    transform:translateY(-8px);
 }
 
-.cake-card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 15px;
+.why-card h3{
+    color:#8B5E3C;
+    margin-bottom:15px;
 }
 
-.cake-card h3 {
-    color: #8B5E3C;
-    margin-top: 15px;
+.why-card p{
+    color:#666;
 }
 
-.cake-card p {
-    color: #666;
-    font-size: 15px;
-}/* Premium About Section */
+/* GALLERY */
 
-.about {
-    padding: 80px 60px;
-    background: #fffaf5;
-    text-align: center;
+.gallery{
+    padding:90px 40px;
+    background:#fffaf5;
+    text-align:center;
 }
 
-.about-content h2 {
-    font-size: 42px;
-    color: #8B5E3C;
-    margin-bottom: 25px;
+.gallery h2{
+    font-size:42px;
+    color:#8B5E3C;
+    margin-bottom:45px;
 }
 
-.about-content p {
-    max-width: 800px;
-    margin: 15px auto;
-    color: #555;
-    line-height: 1.8;
-    font-size: 18px;
+.gallery-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
 }
 
-.about-features {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    margin-top: 50px;
+.gallery img{
+    width:100%;
+    height:120px;
+    object-fit:contain;
+    background:#fff;
+    padding:10px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
 }
 
-.feature {
-    background: white;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+.gallery img:hover{
+    transform:scale(1.05);
 }
 
-.feature h3 {
-    color: #8B5E3C;
-}/* Why Choose Us Section */
+/* PRODUCTS */
+
+.products{
+    padding:90px 40px;
+    background:#fff;
+}
 
-.why-us {
-    padding: 80px 60px;
-    text-align: center;
-    background: white;
+.products h2{
+    text-align:center;
+    font-size:42px;
+    color:#8B5E3C;
+    margin-bottom:50px;
 }
 
-.why-us h2 {
-    font-size: 42px;
-    color: #8B5E3C;
-    margin-bottom: 40px;
+.products-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
 }
 
-.why-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+/* ======================================================
+   PART 3A
+   PRODUCT CARDS + PRICE + BUTTONS
+====================================================== */
+
+.products-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
 }
 
-.why-card {
-    background: #fffaf5;
-    padding: 35px 25px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    transition: 0.3s;
+.product-card{
+    background:#ffffff;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.35s;
+    text-align:center;
+    padding:20px;
 }
 
-.why-card:hover {
-    transform: translateY(-8px);
+.product-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(0,0,0,.15);
 }
 
-.why-card h3 {
-    color: #8B5E3C;
-    margin-bottom: 15px;
+.product-card img{
+    width:100%;
+    height:160px;
+    object-fit:contain;
+    background:#fffaf5;
+    border-radius:15px;
+    padding:10px;
 }
 
-.why-card p {
-    color: #666;
-    line-height: 1.7;
-}<!-- Contact Section -->
-<section id="contact" class="contact">
+.product-card h3{
+    color:#8B5E3C;
+    margin-top:18px;
+    font-size:22px;
+}
 
-    <div class="contact-content">
+.product-card p{
+    color:#666;
+    margin-top:12px;
+    line-height:1.7;
+    font-size:15px;
+}
 
-        <h2>Order Your Dream Cake Today</h2>
+.price{
+    margin-top:18px;
+    padding-top:15px;
+    border-top:1px solid #ececec;
+}
 
-        <p>
-            Have a special celebration coming up?
-            Get in touch with Sana's Sweet Studio
-            and create your perfect custom cake.
-        </p>
+.price p{
+    margin:6px 0;
+    color:#8B5E3C;
+    font-weight:bold;
+}
 
-        <a href="#" class="contact-btn">
-            Order on WhatsApp
-        </a>
+/* PRODUCT BUTTONS */
 
-    </div>
+.product-buttons{
+    margin-top:18px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    align-items:center;
+}
 
-</section>
-/* Footer */
+.product-buttons a{
+    width:150px;
+    display:block;
+    text-decoration:none;
+    padding:6px 10px;
+    border-radius:25px;
+    color:#fff;
+    font-weight:bold;
+    font-size:12px;
+    transition:.3s;
+    margin:0 auto;
+}
 
-.footer {
-    background: #4E342E;
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
+.whatsapp-btn{
+    background:#25D366;
 }
 
-.footer h2 {
-    margin-bottom: 15px;
+.whatsapp-btn:hover{
+    background:#1EBE5D;
 }
 
-.footer p {
-    color: #f5f5f5;
-    line-height: 1.8;
+.facebook-btn{
+    background:#1877F2;
 }
 
-.social-links {
-    margin: 25px 0;
+.facebook-btn:hover{
+    background:#0D65D9;
 }
 
-.social-links a {
-    color: #D4A373;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    transition: 0.3s;
+/* ======================================================
+   PART 3B
+   CONTACT • FOOTER • RESPONSIVE
+====================================================== */
+
+/* CONTACT */
+
+.contact{
+    padding:90px 40px;
+    background:#fffaf5;
+    text-align:center;
 }
 
-.social-links a:hover {
-    color: white;
+.contact h2{
+    font-size:42px;
+    color:#8B5E3C;
+    margin-bottom:20px;
 }
 
-.copyright {
-    margin-top: 25px;
-    font-size: 14px;
-    color: #cccccc;
-}.logo {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+.contact p{
+    max-width:700px;
+    margin:0 auto 35px;
+    color:#666;
+    line-height:1.8;
 }
 
-.logo img {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    object-fit: cover;
+.contact-btn{
+    display:inline-block;
+    background:#25D366;
+    color:#fff;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:35px;
+    font-weight:bold;
+    transition:.3s;
 }
 
-.logo h1 {
-    margin: 0;
-    font-size: 30px;
-    color: #8B5E3C;
+.contact-btn:hover{
+    background:#1EBE5D;
 }
+
+/* FOOTER */
 
-.logo span {
-    display: block;
-    font-size: 14px;
-    color: #777;
-}/* Product Card */
+.footer{
+    background:#4E342E;
+    color:#fff;
+    text-align:center;
+    padding:50px 20px;
+}
 
-.products {
-    padding: 80px 60px;
-    text-align: center;
+.footer h2{
+    margin-bottom:15px;
 }
 
-.product-card {
-    max-width: 350px;
-    margin: 40px auto;
-    background: white;
-    padding: 25px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+.footer p{
+    color:#eee;
+    margin-bottom:15px;
 }
 
-.product-card img {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-    border-radius: 15px;
+.social-links{
+    margin:25px 0;
 }
 
-.product-card h3 {
-    color: #8B5E3C;
-    font-size: 24px;
-    margin-top: 20px;
+.social-links a{
+    color:#D4A373;
+    text-decoration:none;
+    margin:0 12px;
+    font-weight:bold;
+    transition:.3s;
 }
 
-.price p {
-    font-weight: bold;
-    color: #555;
-}.products {
-    padding: 80px 60px;
-    background: #fffaf5;
-    text-align: center;
+.social-links a:hover{
+    color:#fff;
 }
 
-.products h2 {
-    font-size: 42px;
-    color: #8B5E3C;
-    margin-bottom: 40px;
+.copyright{
+    margin-top:20px;
+    font-size:14px;
+    color:#ccc;
 }
+
+/* RESPONSIVE */
 
-.products {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+@media(max-width:992px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
 }
 
-.product-card {
-    .product-card {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 25px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.10);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
+.about-features,
+.why-container,
+.gallery-container,
+.products-grid{
+    grid-template-columns:repeat(2,1fr);
 }
 
-.product-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
 }
+
+@media(max-width:768px){
 
-.product-card img {
-    .product-card img {
-    width: 100%;
-    height: 120px;
-    object-fit: contain;
-    border-radius: 15px;
-    transition: transform 0.3s ease;
+nav{
+    flex-direction:column;
+    gap:20px;
 }
 
-.product-card:hover img {
-    transform: scale(1.05);
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
 }
 
-.product-card h3 {
-    color: #8B5E3C;
-    font-size: 22px;
+.hero-content h2{
+    font-size:38px;
 }
 
-.product-card p {
-    font-size: 16px;
-    line-height: 1.6;
-}.gallery img {
-    .gallery img {
-    width: 100%;
-    height: 120px;
-    object-fit: contain;
-    border-radius: 12px;
-    background: #fffaf5;
-}.price {
-    margin-top: 15px;
-    padding-top: 10px;
-    border-top: 1px solid #eee;
+.about h2,
+.gallery h2,
+.products h2,
+.why-us h2,
+.contact h2{
+    font-size:34px;
 }
 
-.price p {
-    color: #8B5E3C;
-    font-weight: bold;
-    font-size: 15px;
-    margin: 6px 0;
-.product-buttons {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    margin-top: 15px;
+.about-features,
+.why-container,
+.gallery-container,
+.products-grid{
+    grid-template-columns:1fr;
 }
 
-.product-buttons a {
-    display: block;
-    width: 80%;
-    padding: 12px 15px;
-    margin: 0;
-    border-radius: 25px;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
+.product-card img{
+    height:180px;
 }
 
-.whatsapp-btn:hover {
-    background: #1ebe5d;
+.logo img{
+    width:60px;
+    height:60px;
 }
 
-.facebook-btn:hover {
-    background: #0d65d9;
 }
