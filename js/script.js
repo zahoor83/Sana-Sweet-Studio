@@ -60,18 +60,28 @@ function closeCart() {
 // CART V2 - PART 2
 // ===================================
 
-function addToCart(productName, price) {
+function addToCart(productName, price, size = "") {
 
-    const existingItem = cart.find(item => item.name === productName);
+    const itemKey = size ? productName + " (" + size + ")" : productName;
+
+    const existingItem = cart.find(item => item.name === itemKey);
 
     if (existingItem) {
+
         existingItem.quantity++;
+
     } else {
+
         cart.push({
-            name: productName,
+
+            name: itemKey,
+
             price: price,
+
             quantity: 1
+
         });
+
     }
 
     saveCart();

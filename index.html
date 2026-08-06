@@ -43,12 +43,15 @@
 
     <div class="hero-content">
 
-        <h2>Beautiful Homemade Cakes Made With Love</h2>
+        <p class="hero-location">
+    🏡 Proudly Homemade in Townsville, Queensland
+</p>
 
-        <p>
-            Premium custom cakes and sweet desserts handcrafted
-            for birthdays, weddings and every special celebration.
-        </p>
+<h2>Beautiful Homemade Cakes Made With Love</h2>
+
+<p>
+    Handcrafted with love, baked fresh every day, and designed to make your special moments unforgettable.
+</p>
 
         <a href="#products" class="hero-btn">
     Shop Our Cakes
@@ -87,9 +90,16 @@
     </p>
 
     <div class="price">
-        <p>7 inch — $35</p>
-        <p>9 inch — $45</p>
-    </div>
+
+<select id="lemonCakeSize">
+
+<option value="35">7 inch — $35</option>
+
+<option value="45">9 inch — $45</option>
+
+</select>
+
+</div>
 
     <div class="product-buttons">
 
@@ -100,8 +110,13 @@
     <a href="https://www.facebook.com/share/1DW3F1Lzng/" target="_blank" class="facebook-btn">
         Facebook Page
     </a>
-    <button class="cart-btn" onclick="addToCart('Lemon Cake With Glaze', 35)">
-    🛒 Add to Cart
+    <button class="cart-btn"
+onclick="addToCart(
+'Lemon Cake With Glaze',
+Number(document.getElementById('lemonCakeSize').value),
+document.getElementById('lemonCakeSize').options[document.getElementById('lemonCakeSize').selectedIndex].text.split(' — ')[0]
+)">
+🛒 Add to Cart
 </button>
 
 </div>
@@ -132,7 +147,8 @@
     <a href="https://www.facebook.com/share/1DW3F1Lzng/" target="_blank" class="facebook-btn">
         Facebook Page
     </a>
-<button class="cart-btn" onclick="addToCart('Nutted Tea Cake', 35)">
+<button class="cart-btn"
+onclick="addToCart('Nutted Tea Cake', 35, 'Standard')">
     🛒 Add to Cart
 </button>
 
@@ -165,7 +181,8 @@
     <a href="https://www.facebook.com/share/1DW3F1Lzng/" target="_blank" class="facebook-btn">
         Facebook Page
     </a>
-<button class="cart-btn" onclick="addToCart('Party Tray', 65)">
+<button class="cart-btn"
+onclick="addToCart('Party Tray', 65, 'Standard')">
     🛒 Add to Cart
 </button>
 
@@ -184,12 +201,23 @@
     </p>
 
     <div class="price">
-        <p>280ml — $10</p>
-        <p>500ml — $20</p>
-        <p>750ml — $30</p>
-        <p>1L — $40</p>
-        <p>Party Tray — $50</p>
-    </div>
+
+<select id="threeMilkCoffeeCakeSize">
+
+<option value="10">280ml — $10</option>
+
+<option value="20">500ml — $20</option>
+
+<option value="30">750ml — $30</option>
+
+<option value="40">1L — $40</option>
+
+<option value="50">Party Tray — $50</option>
+
+</select>
+
+</div>
+
 <div class="product-buttons">
 
     <a href="https://wa.me/61490391090" target="_blank" class="whatsapp-btn">
@@ -199,9 +227,13 @@
     <a href="https://www.facebook.com/share/1DW3F1Lzng/" target="_blank" class="facebook-btn">
         Facebook Page
     </a>
-    <button class="cart-btn" onclick="addToCart('Three Milk Coffee Cake', 10)">
-    🛒 Add to Cart
-
+    <button class="cart-btn"
+onclick="addToCart(
+'Three Milk Coffee Cake',
+Number(document.getElementById('threeMilkCoffeeCakeSize').value),
+document.getElementById('threeMilkCoffeeCakeSize').options[document.getElementById('threeMilkCoffeeCakeSize').selectedIndex].text.split(' — ')[0]
+)">
+🛒 Add to Cart
 </button>
 
 </div>
@@ -219,12 +251,22 @@
     </p>
 
     <div class="price">
-        <p>280ml — $15</p>
-        <p>500ml — $25</p>
-        <p>750ml — $35</p>
-        <p>1L — $45</p>
-        <p>Party Tray — $65</p>
-    </div>
+
+<select id="threeMilkMangoCakeSize">
+
+<option value="15">280ml — $15</option>
+
+<option value="25">500ml — $25</option>
+
+<option value="35">750ml — $35</option>
+
+<option value="45">1L — $45</option>
+
+<option value="65">Party Tray — $65</option>
+
+</select>
+
+</div>
 <div class="product-buttons">
 
     <a href="https://wa.me/61490391090" target="_blank" class="whatsapp-btn">
@@ -234,8 +276,13 @@
     <a href="https://www.facebook.com/share/1DW3F1Lzng/" target="_blank" class="facebook-btn">
         Facebook Page
     </a>
-<button class="cart-btn" onclick="addToCart('Three Milk Mango Cake', 15)">
-    🛒 Add to Cart
+<button class="cart-btn"
+onclick="addToCart(
+'Three Milk Mango Cake',
+Number(document.getElementById('threeMilkMangoCakeSize').value),
+document.getElementById('threeMilkMangoCakeSize').options[document.getElementById('threeMilkMangoCakeSize').selectedIndex].text.split(' — ')[0]
+)">
+🛒 Add to Cart
 </button>
 
 </div>
@@ -252,12 +299,23 @@
     </p>
 
     <div class="price">
-        <p>280ml — $15</p>
-        <p>500ml — $20</p>
-        <p>750ml — $30</p>
-        <p>1L — $40</p>
-        <p>Party Tray — $65</p>
-    </div>
+
+<select id="threeMilkBiscoffCremeSize">
+
+<option value="15">280ml — $15</option>
+
+<option value="20">500ml — $20</option>
+
+<option value="30">750ml — $30</option>
+
+<option value="40">1L — $40</option>
+
+<option value="65">Party Tray — $65</option>
+
+</select>
+
+</div>
+
 <div class="product-buttons">
 
     <a href="https://wa.me/61490391090" target="_blank" class="whatsapp-btn">
@@ -267,8 +325,13 @@
     <a href="https://www.facebook.com/share/1DW3F1Lzng/" target="_blank" class="facebook-btn">
         Facebook Page
     </a>
-<button class="cart-btn" onclick="addToCart('Three Milk Cake (Biscoff n Creme)', 15)">
-    🛒 Add to Cart
+<button class="cart-btn"
+onclick="addToCart(
+'Three Milk Cake (Biscoff n Creme)',
+Number(document.getElementById('threeMilkBiscoffCremeSize').value),
+document.getElementById('threeMilkBiscoffCremeSize').options[document.getElementById('threeMilkBiscoffCremeSize').selectedIndex].text.split(' — ')[0]
+)">
+🛒 Add to Cart
 </button>
 
 </div>
@@ -286,12 +349,22 @@
     </p>
 
     <div class="price">
-        <p>280ml — $10</p>
-        <p>500ml — $15</p>
-        <p>750ml — $25</p>
-        <p>1L — $35</p>
-        <p>Party Tray — $55</p>
-    </div>
+
+<select id="threeMilkCaramelCremeSize">
+
+<option value="10">280ml — $10</option>
+
+<option value="15">500ml — $15</option>
+
+<option value="25">750ml — $25</option>
+
+<option value="35">1L — $35</option>
+
+<option value="55">Party Tray — $55</option>
+
+</select>
+
+</div>
 <div class="product-buttons">
 
     <a href="https://wa.me/61490391090" target="_blank" class="whatsapp-btn">
@@ -301,8 +374,13 @@
     <a href="https://www.facebook.com/share/1DW3F1Lzng/" target="_blank" class="facebook-btn">
         Facebook Page
     </a>
-<button class="cart-btn" onclick="addToCart('Three Milk Cake (Caramel Toping & Creme)', 10)">
-    🛒 Add to Cart
+<button class="cart-btn"
+onclick="addToCart(
+'Three Milk Cake (Caramel Toping & Creme)',
+Number(document.getElementById('threeMilkCaramelCremeSize').value),
+document.getElementById('threeMilkCaramelCremeSize').options[document.getElementById('threeMilkCaramelCremeSize').selectedIndex].text.split(' — ')[0]
+)">
+🛒 Add to Cart
 </button>
 
 </div>
@@ -319,13 +397,23 @@
         topped with fresh mix fruit and cream.
     </p>
 
-    <div class="price">
-        <p>280ml — $15</p>
-        <p>500ml — $20</p>
-        <p>750ml — $30</p>
-        <p>1L — $40</p>
-        <p>Party Tray — $65</p>
-    </div>
+   <div class="price">
+
+<select id="threeMilkMixFruitCremeSize">
+
+<option value="15">280ml — $15</option>
+
+<option value="20">500ml — $20</option>
+
+<option value="30">750ml — $30</option>
+
+<option value="40">1L — $40</option>
+
+<option value="65">Party Tray — $65</option>
+
+</select>
+
+</div>
 <div class="product-buttons">
 
     <a href="https://wa.me/61490391090" target="_blank" class="whatsapp-btn">
@@ -335,8 +423,13 @@
     <a href="https://www.facebook.com/share/1DW3F1Lzng/" target="_blank" class="facebook-btn">
         Facebook Page
     </a>
-<button class="cart-btn" onclick="addToCart('Three Milk Cake (Mix Fruit & Creme)', 15)">
-    🛒 Add to Cart
+<button class="cart-btn"
+onclick="addToCart(
+'Three Milk Cake (Mix Fruit & Creme)',
+Number(document.getElementById('threeMilkMixFruitCremeSize').value),
+document.getElementById('threeMilkMixFruitCremeSize').options[document.getElementById('threeMilkMixFruitCremeSize').selectedIndex].text.split(' — ')[0]
+)">
+🛒 Add to Cart
 </button>
 
 </div>
@@ -354,12 +447,22 @@
     </p>
 
     <div class="price">
-        <p>280ml — $15</p>
-        <p>500ml — $20</p>
-        <p>750ml — $30</p>
-        <p>1L — $40</p>
-        <p>Party Tray — $65</p>
-    </div>
+
+<select id="threeMilkNutsCremeSize">
+
+<option value="15">280ml — $15</option>
+
+<option value="20">500ml — $20</option>
+
+<option value="30">750ml — $30</option>
+
+<option value="40">1L — $40</option>
+
+<option value="65">Party Tray — $65</option>
+
+</select>
+
+</div>
 <div class="product-buttons">
 
     <a href="https://wa.me/61490391090" target="_blank" class="whatsapp-btn">
@@ -369,8 +472,13 @@
     <a href="https://www.facebook.com/share/1DW3F1Lzng/" target="_blank" class="facebook-btn">
         Facebook Page
     </a>
-<button class="cart-btn" onclick="addToCart('Three Milk Cake (Nuts & Creme)', 15)">
-    🛒 Add to Cart
+<button class="cart-btn"
+onclick="addToCart(
+'Three Milk Cake (Nuts & Creme)',
+Number(document.getElementById('threeMilkNutsCremeSize').value),
+document.getElementById('threeMilkNutsCremeSize').options[document.getElementById('threeMilkNutsCremeSize').selectedIndex].text.split(' — ')[0]
+)">
+🛒 Add to Cart
 </button>
 
 </div>

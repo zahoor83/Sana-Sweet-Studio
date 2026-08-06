@@ -105,20 +105,20 @@
     /* HERO */
 
     .hero{
-        max-width:1400px;
+        max-width:1200px;
         margin:auto;
         display:flex;
         justify-content:space-between;
         align-items:center;
-        gap:60px;
-        padding:90px 40px;
+        gap:40px;
+        padding:40px 40px;
         position:relative;
     }
 
     .hero::before{
         content:"";
         position:absolute;
-        inset:20px;
+        inset:10px;
         z-index:-1;
         border-radius:38px;
         background:
@@ -132,13 +132,20 @@
         flex:1;
         padding:20px 0;
     }
+.hero-location{
+    color:#B56F80;
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:15px;
+    letter-spacing:.5px;
+}
 
     .hero-content h2{
         max-width:650px;
-        font-size:52px;
+        font-size:46px;
         line-height:1.12;
         color:#6F4C54;
-        margin-bottom:22px;
+        margin-bottom:15px;
         letter-spacing:-.8px;
     }
 
@@ -146,7 +153,7 @@
         max-width:650px;
         font-size:18px;
         color:#746366;
-        margin-bottom:32px;
+        margin-bottom:20px;
     }
 
     .hero-btn{
@@ -1332,3 +1339,18 @@
     text-align:center;
 
     }
+
+    .products h2{
+    text-align:center;
+    width:fit-content;
+    margin:0 auto 40px;
+    font-size:26px;
+    font-weight:700;
+    color:#8C5D67;
+    background:linear-gradient(135deg,#FCECEF,#FFF8F5);
+    padding:9px 20px;
+    border-radius:35px;
+    border:2px solid #E7C5CD;
+    box-shadow:0 8px 18px rgba(185,120,134,.18);
+    letter-spacing:.3px;
+}
