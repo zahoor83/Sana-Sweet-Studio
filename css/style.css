@@ -389,7 +389,7 @@
     background:#fff;
     border-radius:28px;
     overflow:hidden;
-    padding:24px;
+    padding:14px;
     text-align:center;
     box-shadow:0 18px 45px rgba(185,120,134,.12);
     transition:.35s;
@@ -413,14 +413,34 @@
 
 
     .products-grid{
-
     display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:30px;
-
+    grid-template-columns:repeat(5,1fr);
+    gap:18px;
+    align-items:start;
+}
+@media (max-width:1200px){
+    .products-grid{
+        grid-template-columns:repeat(4,1fr);
     }
+}
+
+@media (max-width:900px){
+    .products-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+
+@media (max-width:650px){
+    .products-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media (max-width:420px){
+    .products-grid{
+        grid-template-columns:1fr;
+    }
+}
 
 
 
@@ -455,13 +475,15 @@
 
 
     .product-card img{
-    width:100%;
-    height:220px;
-    object-fit:contain;
+    width:160px;
+    height:160px;
+    margin:0 auto 15px;
+    display:block;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #F2D6DD;
     background:#FFF8FA;
-    border-radius:20px;
-    padding:18px;
-    transition:.4s;
+    padding:6px;
 }
 
 .product-card:hover img{
@@ -527,18 +549,11 @@
 
 
     .product-buttons{
-
-    margin-top:18px;
-
     display:flex;
-
     flex-direction:column;
-
-    gap:12px;
-
-    align-items:center;
-
-    }
+    gap:10px;
+    margin-top:15px;
+}
 
 
 
@@ -555,6 +570,11 @@
 
    .whatsapp-btn{
     background:linear-gradient(135deg,#25D366,#1BA94C);
+    width:60%;
+margin:0 auto;
+display:block;
+font-size:14px;
+padding:10px;
 }
 
 
@@ -569,6 +589,11 @@
 
     .facebook-btn{
     background:linear-gradient(135deg,#3B82F6,#1E5FD4);
+   width:60%;
+margin:0 auto;
+display:block;
+font-size:14px;
+padding:10px;
 }
 
 
@@ -584,6 +609,11 @@
     .instagram-btn{
 
     background:#E1306C;
+    width:70%;
+margin:0 auto;
+display:block;
+font-size:14px;
+padding:10px;
 
     }
 
@@ -666,6 +696,7 @@
 .footer h2{
     margin-bottom:18px;
     font-size:30px;
+    color:#ffffff;
 }
 
 .footer p{
@@ -1261,6 +1292,11 @@
     font-weight:bold;
     transition:.35s;
     cursor:pointer;
+    width:50%;
+    margin:0 auto;
+display:block;
+font-size:14px;
+padding:10px;
 }
 
 .cart-btn:hover{
@@ -1353,4 +1389,72 @@
     border:2px solid #E7C5CD;
     box-shadow:0 8px 18px rgba(185,120,134,.18);
     letter-spacing:.3px;
+}
+.price select{
+
+    width:60%;
+
+    display:block;
+
+    margin:0 auto 15px;
+
+    padding:10px 16px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:linear-gradient(135deg,#F8D7DF,#EFBBC7);
+    
+
+    color:#8C5D67;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    outline:none;
+
+    box-shadow:0 6px 16px rgba(185,120,134,.18);
+
+    transition:all .3s ease;
+
+   
+
+}
+
+.price select:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 24px rgba(185,120,134,.28);
+
+}
+
+.price select:focus{
+
+    border:2px solid #B97886;
+
+    box-shadow:0 0 0 4px rgba(185,120,134,.15);
+
+}
+
+.price select option{
+
+    background:#FFF8FA;
+
+    color:#8C5D67;
+
+    font-weight:600;
+
+}
+.footer-bottom{
+    text-align:center;
+    color:#000000;
+    font-size:14px;
+    margin-top:30px;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,.15);
 }
